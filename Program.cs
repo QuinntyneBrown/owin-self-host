@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.Http;
 using Microsoft.Owin.Hosting;
 
 namespace Chloe
@@ -8,9 +7,9 @@ namespace Chloe
     {
         static void Main(string[] args)
         {
-            string baseAddress = "http://localhost:9002/";
+            string baseAddress = "http://localhost:9006/";
 
-            //WebApp.Start<Startup>(url: baseAddress);
+            WebApp.Start<Startup>(url: baseAddress);
 
             Console.ReadLine();
         }
